@@ -56,14 +56,14 @@ func main() {
 
 	vw := car{
 		Manufacturer: "VW",
-		Model: "Golf",
-		Doors: 5,
+		Model:        "Golf",
+		Doors:        5,
 	}
 
 	cars := []car{bmw, porche, vw}
 
 	data := struct {
-		Wisdom []sage
+		Wisdom    []sage
 		Transport []car
 	}{
 		Wisdom:    sages,
