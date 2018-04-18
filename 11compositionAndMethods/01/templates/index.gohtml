@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Go HTML</title>
+</head>
+<body>
+
+    {{if .}}
+        <h1>{{.Name}}</h1>
+        <h2>{{.Age}}</h2>
+    {{end}}
+
+    {{template "copyright"}}
+
+</body>
+</html>
