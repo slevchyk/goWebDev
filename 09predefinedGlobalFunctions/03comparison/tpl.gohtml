@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+</head>
+
+<body>
+
+    {{if gt .Score1 .Score2}}
+            Score 1 "{{.Score1}}" > Score 2 "{{.Score2}}"
+    {{else}}
+            Score 1 "{{.Score1}}" < Score 2 "{{.Score2}}"
+    {{end}}
+
+    {{if eq .Score3 .Score4}}
+            Score 3 "{{.Score3}}" == Score 4 "{{.Score4}}"
+    {{end}}
+
+    {{if le .Score1 .Score2}}
+            Score 1 "{{.Score1}}" < Score 2 "{{.Score2}}"
+    {{else}}
+            Score 1 "{{.Score1}}" > Score 2 "{{.Score2}}"
+    {{end}}
+
+
+</body>
+
+</html>
