@@ -6,10 +6,11 @@
 </head>
 <body>
 
-    {{if .}}
-        <h1>{{.Name}}</h1>
-        <h2>{{.Age}}</h2>
-    {{end}}
+    <h1>{{.Name}}</h1>
+    <h2>{{.Age}}</h2>
+    <h3>{{.SomeProcessing}}</h3>
+    <h4>{{.AgeDbl}}</h4>
+    <h5>{{.AgeDbl | .TakesArg}}</h5>
 
     {{template "footer"}}
 

@@ -32,7 +32,7 @@ func main() {
 		true,
 	}
 
-	err := tpl.ExecuteTemplate(os.Stdout, "index.gohtml", p1)
+	err := tpl.ExecuteTemplate(os.Stdout, "tpl.gohtml", p1)
 	if err != nil {
 		log.Fatalln(err)
 	}
