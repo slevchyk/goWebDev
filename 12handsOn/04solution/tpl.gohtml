@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Go HTML</title>
+</head>
+<body>
+
+{{range .}}
+
+	{{.Name}} - {{.Adress}} - {{.City}} - {{.Zip}} - {{.Region.Name}}
+
+{{end}}
+
+</body>
+</html>
