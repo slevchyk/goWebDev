@@ -6,7 +6,11 @@
 </head>
 <body>
 
-    {{template "copyright"}}
+    {{if .}}
+        {{.}}
+    {{end}}
+
+    {{template "footer" .}}
 
 </body>
 </html>

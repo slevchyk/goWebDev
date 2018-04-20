@@ -23,7 +23,7 @@ func main() {
 }
 
 func index(res http.ResponseWriter, req *http.Request) {
-	err := tpl.ExecuteTemplate(res, "index.gohtml", nil)
+	err := tpl.ExecuteTemplate(res, "tpl.gohtml", nil)
 	if err != nil {
 		log.Fatalln("template didn't execute: ", err)
 	}
