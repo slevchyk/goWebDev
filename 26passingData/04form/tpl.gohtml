@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Go HTML</title>
+</head>
+<body>
+
+<form method="post">
+	<label for="fname">First name:</label>
+	<input type="text" name="FName" id="fname">
+    <br>
+	<label for="lname">Last name</label>
+	<input type="text" name="LName" id="lname">
+	<br>
+	<label for="ok"></label>
+	<input type="checkbox" name="OK" id="ok">
+	<br>
+	<input type="submit" value="Send">
+</form>
+
+<h3>First name: {{.FName}}</h3>
+<h3>Last name:{{.LName}}</h3>
+<h3>OK: {{.OK}}</h3>
+
+</body>
+</html>
