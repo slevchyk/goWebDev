@@ -1,8 +1,8 @@
 package main
 
 import (
-	"net/http"
 	"io"
+	"net/http"
 )
 
 func main() {
@@ -24,4 +24,3 @@ func indexHandler(w http.ResponseWriter, r *http.Request) {
 
 	io.WriteString(w, body)
 }
-

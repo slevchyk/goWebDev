@@ -1,14 +1,14 @@
 package main
 
 import (
-	"log"
-	"net"
 	"bufio"
 	"fmt"
+	"log"
+	"net"
 )
 
-func main()  {
-	
+func main() {
+
 	li, err := net.Listen("tcp", ":8080")
 	if err != nil {
 		log.Fatalln(err)
@@ -24,7 +24,7 @@ func main()  {
 
 		go serve(conn)
 	}
-	
+
 }
 func serve(conn net.Conn) {
 

@@ -1,8 +1,8 @@
 package _1ioCopy
 
 import (
-	"net/http"
 	"io"
+	"net/http"
 )
 
 func main() {

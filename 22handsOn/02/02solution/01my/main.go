@@ -1,13 +1,13 @@
 package main
 
 import (
+	"io"
 	"log"
 	"net"
-	"io"
 )
 
-func main()  {
-	
+func main() {
+
 	li, err := net.Listen("tcp", ":8080")
 	if err != nil {
 		log.Fatalln(err)
@@ -23,7 +23,7 @@ func main()  {
 
 		handle(conn)
 	}
-	
+
 }
 func handle(conn net.Conn) {
 

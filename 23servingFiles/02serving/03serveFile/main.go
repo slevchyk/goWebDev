@@ -1,8 +1,8 @@
 package main
 
 import (
-	"net/http"
 	"io"
+	"net/http"
 )
 
 func main() {
@@ -28,4 +28,4 @@ func indexHandler(w http.ResponseWriter, r *http.Request) {
 func rivnePngHandler(w http.ResponseWriter, r *http.Request) {
 
 	http.ServeFile(w, r, "../../rivne.png")
-  }
+}
