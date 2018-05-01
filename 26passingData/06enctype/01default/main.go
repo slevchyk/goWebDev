@@ -13,11 +13,11 @@ func init() {
 
 func main() {
 
-	http.HandleFunc("/", indexHemdler)
+	http.HandleFunc("/", indexHendler)
 	http.ListenAndServe(":8080", nil)
 }
 
-func indexHemdler(w http.ResponseWriter, r *http.Request) {
+func indexHendler(w http.ResponseWriter, r *http.Request) {
 
 	bs := make([]byte, r.ContentLength)
 	r.Body.Read(bs)
