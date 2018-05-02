@@ -5,8 +5,8 @@ import (
 	"html/template"
 	"net/http"
 
-	"github.com/slevchyk/blogGo/models"
-	"github.com/slevchyk/blogGo/utils"
+	"github.com/slevchyk/goWebDev/00/blogGo/models"
+	"github.com/slevchyk/goWebDev/00/blogGo/utils"
 )
 
 var tpl *template.Template
@@ -30,8 +30,7 @@ func main() {
 	http.HandleFunc("/edit", editHandler)
 	http.HandleFunc("/delete", deleteHandler)
 
-
-	http.ListenAndServe(":3000", nil)
+	http.ListenAndServe(":80", nil)
 }
 
 func indexHandler(w http.ResponseWriter, r *http.Request) {
@@ -83,7 +82,6 @@ func editHandler(w http.ResponseWriter, r *http.Request) {
 	if !found {
 		http.NotFound(w, r)
 	}
-
 
 	err := tpl.ExecuteTemplate(w, "write", post)
 	if err != nil {
