@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+
+{{if .UserName}}
+    <h2>Hello: {{.FirstName}} {{.LastName}}</h2>
+    <br>
+    <h3>Go to <a href="/page">the page</a></h3>
+{{else}}
+    <h3><a href="/signup">sign up</a></h3>
+{{end}}
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main page</title>
+</head>
+<body>
+
+<form method="post">
+
+    <input type="email" name="userName" placeholder="email"><br>
+    <input type="text" name="firstName" placeholder="first name"><br>
+    <input type="text" name="lastName" placeholder="last name"><br>
+    <input type="submit">
+
+</form>
+
+
+{{if .UserName}}
+User name:  {{.UserName}}<br>
+First name: {{.FirstName}}<br>
+Last name:  {{.LastName}}<br>
+{{end}}
+
+<br>
+<h2>Go to <a href="/page">the page</a></h2>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Personal paget</title>
+</head>
+<body>
+
+<h1>Welcome to personal page</h1>
+
+{{if .UserName}}
+User name:  {{.UserName}}<br>
+Password:   {{.Password}}
+First name: {{.FirstName}}<br>
+Last name:  {{.LastName}}<br>
+{{end}}
+
+<br>
+<h2>Go to <a href="/">index</a></h2>
+</body>
+</html>
